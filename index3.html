@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>House of Amelia | Holiday Apartments in Nyali & Bamburi, Mombasa</title>
+<meta name="description" content="Modern 2 & 3-bedroom holiday apartments in Nyali and Bamburi, Mombasa with AC, swimming pool & fast Wi-Fi.">
+<link rel="canonical" href="https://yourdomain.com/">
+
+<style>
+:root {
+  --primary:#0f766e;
+  --secondary:#134e4a;
+  --accent:#f0fdfa;
+  --text:#333;
+}
+
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  line-height:1.7;
+  color:var(--text);
+}
+
+/* Header */
+header {
+  height:75vh;
+  background: linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)), url("./images/CV HOMESLiving.webp") center/cover no-repeat;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  padding:20px;
+}
+
+header h1 { font-size:3rem; margin-bottom:10px; text-shadow:0 4px 10px rgba(0,0,0,.4); }
+header p { max-width:700px; font-size:1.2rem; }
+.hero-btn { margin-top:30px; background:linear-gradient(135deg,#14b8a6,#0f766e); color:#fff; padding:16px 38px; border-radius:50px; font-weight:600; text-decoration:none; box-shadow:0 15px 35px rgba(0,0,0,.3); }
+
+/* Sections */
+section { padding:70px 20px; max-width:1100px; margin:auto; }
+.soft-bg { background:linear-gradient(180deg,var(--accent),#fff); border-radius:30px; margin:50px auto; }
+h2 { color:var(--primary); }
+.features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+.feature-card { background:#fff; padding:25px; border-radius:20px; box-shadow:0 12px 30px rgba(0,0,0,.08); }
+
+.gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
+.gallery-item { height:250px; border-radius:15px; overflow:hidden; cursor:pointer; box-shadow:0 8px 25px rgba(0,0,0,.15); }
+.gallery-item img { width:100%; height:100%; object-fit:cover; transition:.4s; }
+.gallery-item:hover img { transform:scale(1.08); }
+
+.amenities ul { list-style:none; padding:0; columns:2; }
+.amenities li::before { content:"✓ "; color:var(--primary); font-weight:bold; }
+
+.faq { list-style:none; padding:0; }
+.faq li { background:#fff; margin-bottom:20px; padding:25px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,.08); }
+
+.cta { background:var(--accent); text-align:center; padding:90px 20px; border-radius:30px; }
+.cta a { display:inline-block; margin-top:25px; background:var(--primary); color:#fff; padding:18px 45px; border-radius:50px; font-size:20px; text-decoration:none; }
+
+footer { background:var(--secondary); color:#fff; text-align:center; padding:40px; font-size:14px; }
+
+/* LIGHTBOX WITH GALLERY */
+#lightbox {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.8);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+#lightbox.active { opacity:1; visibility: visible; }
+
+.lightbox-content {
+  position: relative;
+  max-width:900px;
+  width:100%;
+  padding:16px;
+  border-radius:16px;
+  background:#000;
+  box-shadow:0 30px 70px rgba(0,0,0,0.6);
+  transform: scale(0.85);
+  transition: transform 0.35s ease;
+}
+
+#lightbox.active .lightbox-content { transform: scale(1); }
+
+#lightbox img { width:100%; max-height:65vh; object-fit:contain; border-radius:12px; display:block; }
+
+.lightbox-close {
+  position: absolute; top:-14px; right:-14px;
+  width:42px; height:42px; border-radius:50%; border:none;
+  background:#fff; color:#000; font-size:26px; font-weight:bold;
+  cursor:pointer; box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Arrows */
+.lightbox-arrow {
+  position: absolute; top:50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border:none; border-radius:50%;
+  width:44px; height:44px;
+  font-size:28px; font-weight:bold;
+  cursor:pointer; display:flex;
+  align-items:center; justify-content:center;
+  transition: background 0.2s;
+}
+
+.lightbox-arrow:hover { background: rgba(255,255,255,0.9); }
+
+.arrow-left { left:-60px; }
+.arrow-right { right:-60px; }
+
+/* Responsive */
+@media(max-width:600px){
+  header h1{font-size:2rem}
+  .amenities ul{columns:1}
+  .lightbox-content { padding:12px; }
+  #lightbox img { max-height:55vh; }
+  .arrow-left { left:10px; }
+  .arrow-right { right:10px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>House of Amelia Apartments</h1>
+  <p>Luxury Holiday Apartments in Nyali & Bamburi • AC • Pool • Near the Beach</p>
+  <a href="https://wa.me/254112415949" class="hero-btn">Book via WhatsApp</a>
+</header>
+
+<section>
+  <h2>Your Coastal Escape in Mombasa</h2>
+  <p>Modern 2 & 3-bedroom holiday apartments designed for comfort, convenience, and relaxation—minutes from Mombasa’s best beaches.</p>
+</section>
+
+<section class="soft-bg">
+  <h2>🌴 Why Choose House of Amelia?</h2>
+  <div class="features">
+    <div class="feature-card">🏖️ Prime location near Nyali & Bamburi Beach</div>
+    <div class="feature-card">❄️ Fully air-conditioned apartments</div>
+    <div class="feature-card">🏊 Swimming pool access</div>
+    <div class="feature-card">👨‍👩‍👧 Family & group friendly</div>
+    <div class="feature-card">💎 Affordable luxury living</div>
+  </div>
+</section>
+
+<section>
+  <h2>Experience the Comfort</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(0)">
+      <img src="./images/CV HOMESLiving.webp" loading="lazy" alt="Living room">
+    </div>
+    <div class="gallery-item" onclick="openLightbox(1)">
+      <img src="./images/CV HOMESPool.webp" loading="lazy" alt="Swimming pool">
+    </div>
+    <div class="gallery-item" onclick="openLightbox(2)">
+      <img src="./images/CV HOMESMaster.webp" loading="lazy" alt="Master bedroom">
+    </div>
+    <div class="gallery-item" onclick="openLightbox(3)">
+      <img src="./images/CV HOMESKitchen2.webp" loading="lazy" alt="Kitchen">
+    </div>
+    <div class="gallery-item" onclick="openLightbox(4)">
+      <img src="./images/HOUSE OF AMELIA BAMBURI LIVING.webp" loading="lazy" alt="Bamburi living room">
+    </div>
+    <div class="gallery-item" onclick="openLightbox(5)">
+      <img src="./images/HOUSE OF AMELIA BAMBURI BR2.webp" loading="lazy" alt="Bamburi bedroom">
+    </div>
+  </div>
+</section>
+
+<section class="amenities soft-bg">
+  <h2>Premium Amenities</h2>
+  <ul>
+    <li>2 & 3 spacious bedrooms</li>
+    <li>Swimming pool</li>
+    <li>Full air conditioning</li>
+    <li>Fast & free Wi-Fi</li>
+    <li>Fully equipped kitchen</li>
+    <li>Secure parking</li>
+    <li>Walking distance to the beach</li>
+  </ul>
+</section>
+
+<section class="soft-bg">
+  <h2>❓ Frequently Asked Questions</h2>
+  <ul class="faq">
+    <li><strong>Do the apartments have air conditioning?</strong> Yes, all apartments are fully air-conditioned.</li>
+    <li><strong>Is there a swimming pool?</strong> Yes, guests have access to a swimming pool.</li>
+    <li><strong>How close is the beach?</strong> Just a few minutes walk from Nyali and Bamburi Beach.</li>
+    <li><strong>Are families welcome?</strong> Absolutely—our apartments are family-friendly.</li>
+    <li><strong>Is Wi-Fi available?</strong> Yes, fast Wi-Fi is included.</li>
+  </ul>
+</section>
+
+<section class="cta">
+  <h2>Ready to Book?</h2>
+  <p>Chat with us directly for the best rates & availability.</p>
+  <a href="https://wa.me/254112415949">WhatsApp: Book Now</a>
+</section>
+
+<footer>
+  © House of Amelia Mombasa | Nyali & Bamburi Holiday Rentals
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <div class="lightbox-content" onclick="event.stopPropagation()">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <button class="lightbox-arrow arrow-left" onclick="prevImage()">‹</button>
+    <img id="lightbox-img" alt="">
+    <button class="lightbox-arrow arrow-right" onclick="nextImage()">›</button>
+  </div>
+</div>
+
+<script>
+const images = [
+  './images/CV HOMESLiving.webp',
+  './images/CV HOMESPool.webp',
+  './images/CV HOMESMaster.webp',
+  './images/CV HOMESKitchen2.webp',
+  './images/HOUSE OF AMELIA BAMBURI LIVING.webp',
+  './images/HOUSE OF AMELIA BAMBURI BR2.webp'
+];
+
+let currentIndex = 0;
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+function openLightbox(index) {
+  currentIndex = index;
+  lightboxImg.src = images[currentIndex];
+  lightbox.classList.add('active');
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  lightboxImg.src = '';
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  lightboxImg.src = images[currentIndex];
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  lightboxImg.src = images[currentIndex];
+}
+
+// Close on click outside
+lightbox.addEventListener('click', closeLightbox);
+
+// Swipe support for mobile
+let startX = 0;
+lightboxImg.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
+lightboxImg.addEventListener('touchend', e => {
+  const endX = e.changedTouches[0].clientX;
+  if (endX - startX > 50) prevImage();
+  if (startX - endX > 50) nextImage();
+});
+</script>
+
+</body>
+</html>
